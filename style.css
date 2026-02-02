@@ -73,3 +73,18 @@ footer {
     font-size: 0.85rem;
     color: #555;
 }
+/* Image sizing and centering for posts */
+.post-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1em 0;
+}
+
+/* Optional homepage banner style */
+.banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 0 1.2em 0;
+}
