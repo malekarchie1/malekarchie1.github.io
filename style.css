@@ -1,84 +1,56 @@
 /* MODERN DESIGN SYSTEM */
-:root {
-    --primary-blue: #007bff;
-    --dark-text: #222222;
-    --light-text: #555555;
-    --bg-light: #f8f9fa;
-    --white: #ffffff;
-}
-
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    line-height: 1.7; /* Better spacing between lines */
-    color: var(--dark-text);
-    background-color: var(--bg-light);
+    line-height: 1.7;
+    color: #222;
+    background-color: #f0f2f5; /* Light grey background */
     margin: 0;
     padding: 0;
 }
 
-/* IMPROVEMENT 1: CONSTRAINED COLUMN (Layout) */
-.container, main {
-    max-width: 680px; /* Narrower for better reading */
+header {
+    background-color: #1a1a1a; /* Dark professional header */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 { margin: 0; font-size: 2.2rem; }
+.tagline { color: #aaa; font-style: italic; margin-top: 10px; }
+
+nav { margin-top: 20px; }
+nav a { text-decoration: none; color: #007bff; font-weight: bold; margin: 0 10px; }
+nav a:hover { text-decoration: underline; }
+
+/* CENTERED CONTENT BOX */
+main {
+    max-width: 700px;
     margin: 40px auto;
     padding: 40px;
-    background-color: var(--white);
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-}
-
-/* IMPROVEMENT 2: TYPOGRAPHY & HIERARCHY */
-h1 {
-    font-size: 2.8rem;
-    color: var(--dark-text);
-    margin-bottom: 10px;
-    letter-spacing: -1px;
-    text-align: center;
-}
-
-h2 {
-    font-size: 1.8rem;
-    color: var(--primary-blue);
-    margin-top: 2rem;
-}
-
-p {
-    font-size: 1.15rem;
-    margin-bottom: 1.6rem;
-}
-
-/* IMPROVEMENT 3: MODERN NAVIGATION */
-header {
-    background-color: var(--white);
-    border-bottom: 1px solid #eee;
-    padding: 20px 0;
-}
-
-nav {
-    text-align: center;
-}
-
-nav a {
-    text-decoration: none;
-    color: var(--light-text);
-    font-weight: 600;
-    margin: 0 15px;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: var(--primary-blue);
-}
-
-/* Fix for your images */
-img, .post-image, .banner-image {
-    width: 100%;
-    height: auto;
+    background-color: #ffffff;
     border-radius: 8px;
-    margin: 25px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-footer {
-    text-align: center;
-    padding: 40px;
-    color: #999;
+h2 { border-bottom: 2px solid #007bff; padding-bottom: 10px; color: #333; }
+
+/* POST LIST STYLING */
+.post-list { list-style: none; padding: 0; }
+.post-list li { 
+    padding: 20px 0; 
+    border-bottom: 1px solid #eee; 
 }
+.post-list li:last-child { border-bottom: none; }
+
+.post-list a { 
+    font-size: 1.25rem; 
+    color: #007bff; 
+    text-decoration: none; 
+    display: block;
+    margin-bottom: 5px;
+}
+.post-list a:hover { color: #0056b3; }
+
+.date { color: #777; font-size: 0.85rem; }
+
+footer { text-align: center; padding: 40px; color: #666; font-size: 0.9rem; }
