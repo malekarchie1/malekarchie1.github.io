@@ -3,13 +3,13 @@ body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.7;
     color: #222;
-    background-color: #f0f2f5; /* Light grey background */
+    background-color: #f0f2f5; /* THIS MAKES THE BACKGROUND GREY */
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #1a1a1a; /* Dark professional header */
+    background-color: #1a1a1a; /* DARK HEADER */
     color: white;
     padding: 40px 20px;
     text-align: center;
@@ -20,14 +20,13 @@ header h1 { margin: 0; font-size: 2.2rem; }
 
 nav { margin-top: 20px; }
 nav a { text-decoration: none; color: #007bff; font-weight: bold; margin: 0 10px; }
-nav a:hover { text-decoration: underline; }
 
-/* CENTERED CONTENT BOX */
+/* THE CENTERED CONTENT BOX */
 main {
     max-width: 700px;
     margin: 40px auto;
     padding: 40px;
-    background-color: #ffffff;
+    background-color: #ffffff; /* WHITE BOX FOR CONTENT */
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
@@ -40,7 +39,6 @@ h2 { border-bottom: 2px solid #007bff; padding-bottom: 10px; color: #333; }
     padding: 20px 0; 
     border-bottom: 1px solid #eee; 
 }
-.post-list li:last-child { border-bottom: none; }
 
 .post-list a { 
     font-size: 1.25rem; 
@@ -49,8 +47,15 @@ h2 { border-bottom: 2px solid #007bff; padding-bottom: 10px; color: #333; }
     display: block;
     margin-bottom: 5px;
 }
-.post-list a:hover { color: #0056b3; }
 
 .date { color: #777; font-size: 0.85rem; }
 
 footer { text-align: center; padding: 40px; color: #666; font-size: 0.9rem; }
+
+/* IMAGE STYLING FOR THE NEW POST */
+.post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+}
